@@ -1,0 +1,262 @@
+\documentclass[a4paper,14pt,twoside]{extarticle} \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% Fonte Caladea se existir, senão lmodern
+\IfFileExists{caladea.sty}{
+  \usepackage{caladea}
+}{
+  \usepackage{lmodern} }
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{verse}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo após seções
+
+% Ajuste do recuo de parágrafo
+\setlength{\parindent}{1.5em}
+
+% Centralizar títulos
+\titleformat{\section}
+  {\normalfont\centering\bfseries\Large}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\centering\bfseries\large}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\centering\bfseries}{\thesubsubsection}{1em}{}
+
+% -------------- Símbolos de Versículo e Resposta --------------
+% Definição do símbolo (a “barrinha” inclinada)
+\makeatletter
+\newcommand{\vers@resp@sym}{%
+  \raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}%
+}
+% macro interna que sobrepõe a barrinha e a letra V ou R
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{%
+     \hidewidth\kern#1\vers@resp@sym\hidewidth\cr
+     #2\cr
+  }}%
+}
+% comandos públicos \versicle e \response
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{\textbf{V}}}
+  \DeclareRobustCommand{\response}{\vers@resp{0pt}{\textbf{R}}}
+\makeatother
+% ^------------- Símbolos de Versículo e Resposta -------------^
+
+% Rodapé com imagem e página
+% Ajuste para cabeçalho do fancyhdr
+\setlength{\headheight}{18pt} % Ajuste recomendado pelo warning do fancyhdr
+\pagestyle{fancy}
+% ---- Cabeçalho ------------
+\fancyhf[C]{}
+% ----- Rodapé --------------
+\fancyfoot[LO,LE]{%
+  \includegraphics[scale=0.2]{assets/cross.png}\quad
+  \textit{Novena ao \textbf{Beato Miguel Pro}}
+}
+\fancyfoot[RO,RE]{\thepage}
+
+\begin{document}
+
+
+\begin{center}
+  {\huge Novena ao Beato Miguel Pro}
+\end{center}
+
+
+\say{Beatificado por São João Paulo II em 1988, este sacerdote tornou-se um símbolo dos "cristeros", os valentes católicos que morriam para defender a fé de Cristo e a liberdade da Igreja no México. Antes de morrer nas mãos dos soldados de Calles, suas últimas palavras ecoariam por todo o século XX, inspirando uma legião de mártires em todo o mundo cristão: "Viva Cristo Rey!"}
+
+
+\begin{center}
+  \rule{1.0\textwidth}{0.4pt}
+\end{center}
+
+\tableofcontents
+\thispagestyle{empty}
+
+
+\newpage
+\section{História}
+
+O beato Pe. Miguel Pro, Sacerdote da Companhia de Jesus e Mártir, viveu um tempo de perseguição de um governo maçom contra a Igreja Católica e foi condenado à morte sem julgamento algum. Conheça a história do homem que, estando diante da morte, bradou: “Viva Cristo Rei”!
+
+Miguel Agustín Pro Juárez nasceu em 13 de janeiro de 1891 em Guadalupe e foi morto na Cidade do México em 23 de novembro de 1927. Foi um tempo de conflito intenso entre Igreja e Estado.
+
+Em 1914, a política anticlerical do presidente marxista Plutarco Elías Calles obrigou o noviço Miguel a deixar o país. Ele poderia retornar por um ano apenas em julho de 1926, enquanto os confrontos da “Guerra Cristera” passavam por seu pior momento.
+
+Ele então começara a trabalhar na capital como padre incansável e brilhante, generoso e irônico. Em sua bicicleta, distribuía semanalmente a comunhão em reuniões clandestinas. Ele ajudava mães solteiras e se preocupava com prostitutas.
+
+Internamente, sentiu um conflito: por um lado o amor a Cristo Rei que o faria desejar o martírio, por outro a consciência de sua necessidade de assistir o povo como sacerdote. Ele sempre foi “mantido sob controle”, mas seu exercício sacerdotal tinha um eco tão forte que o governo finalmente decidiu eliminá-lo.
+
+\subsection{Viva Cristo Rei!}
+
+Ele conseguiu evitar sua captura em diversas ocasiões, mas em 13 de novembro de
+1927, quando a Liga em Defesa da Liberdade Religiosa participou de um ataque
+contra Obregòn, que era candidato à presidência da República, a polícia também
+acusou Pro e seus dois irmãos de cúmplices do crime.
+
+Os protestos formais contra a sentença de morte foram inúteis. Pelo contrário,
+o governo também conseguiu evitar procedimentos legais, antecipando a execução.
+As intervenções diplomáticas chegaram, mas apenas Roberto foi salvo. Miguel e
+Humberto foram fuzilados às 10h do dia 23 de novembro de 1927, gritando “Viva
+Cristo Rei”.
+
+Miguel foi declarado mártir em 10 de novembro de 1986 e beatificado pelo Papa João Paulo II em 25 de setembro de 1988.
+
+% --- Orações Diárias ---
+\newpage
+
+
+\section{Novena ao Beato Miguel Pro}
+
+\subsection{Dia 1}
+
+Senhor, deve ser tão significativo para Ti quando uma pessoa persiste na fé apesar da perseguição! Não consigo imaginar o quão desafiador foi o Teu ministério, Beato Miguel Pro. Tu enfrentavas a pena de morte se fosses descoberto. Ser um sacerdote já é um desafio sem a perseguição religiosa a isso somada!Beato Pro, coloco diante de Ti todos aqueles que são perseguidos por sua fé. Sei que há países no mundo onde os católicos precisam ser discretos sobre sua fé para que não sejam mortos. Mesmo em países mais tolerantes, os católicos são perseguidos verbalmente e discriminados por suas crenças.Por favor, esteja com todos os que são afetados pela perseguição religiosa, Beato Pro. Fortaleça sua fé contra os ataques. Permita que eles encontrem maneiras de serem fortalecidos em suas crenças. E por favor, guie-nos em direção a um mundo mais pacífico onde a perseguição religiosa possa ser eliminada.Por favor, também tenha em mente as minhas intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 2}
+
+
+Jesus, Tu nos ensinaste no Pai Nosso a orar a Deus para “perdoar as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido”. Isso soa fácil de fazer quando falado, mas colocá-lo em prática é tão mais difícil!Ainda assim, sei que se Tu e o Beato Pro podem perdoar os inimigos enquanto vos executavam, então eu deveria ser capaz de perdoar as pequenas ofensas que os outros me infligem.Beato Miguel Pro, às vezes acho difícil perdoar os outros. Guardar rancor é tão mais fácil. Às vezes até parece melhor fazer isso! Mas eu sei que a verdadeira paz vem ao ser capaz de deixar a raiva de lado. O perdão é tanto sobre a minha paz quanto sobre a de quem me ofendeu.Beato Pro, podes ajudar-me a perdoar como tu fizeste? Permita-me lembrar da misericórdia que foi mostrada a mim e fazer o mesmo. Quando estiver prestes a me irritar, por favor, ajuda-me a rezar pela pessoa que me prejudicou.Eu sei que não sou perfeito e também preciso buscar o perdão dos outros. Sempre que eu estiver errado, por favor, incita-me a pedir desculpas, Beato Miguel Pro.Por favor, também ore por minhas intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 3}
+
+
+Jesus, sendo totalmente humano e totalmente divino, Tu experimentaste tantas
+emoções humanas: amor, raiva, tristeza, medo e mais. Tu também experimentaste
+alegria! Eu adoraria te ver alegre ou até mesmo rindo. Espero experimentar isso
+contigo no céu algum dia!Beato Pro, tu eras bem conhecido por teu espírito
+alegre e aventureiro quando criança. Essa mesma brincadeira te ajudou na vida
+adulta, quando te disfarçavas durante a perseguição religiosa em teu país. Na
+verdade, foi o teu espírito tão vibrante que permitiu continuar o ministério
+mesmo com essa perseguição!Beato Pro, podes trazer alegria para minha vida? Eu
+fico tão sobrecarregado com responsabilidades e preocupações que às vezes
+esqueço de sorrir. Ajuda-me a aproveitar os pequenos momentos da vida. Sem
+negligenciar minhas responsabilidades, ajuda-me a deixar de lado o medo e a não
+ter receio de novas aventuras. Ajuda-me a rir mais, a cantar mais e a
+simplesmente ser mais feliz.Por favor, também ore pelas minhas intenções:
+
+\textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 4}
+
+
+Eu sei que Tu viste todo o tempo, Senhor. Tu podes ver o futuro também. Tu estás no controle, mas ainda me preocupo com o estado do mundo.Não é um momento agradável para ser católico, Beato Pro. Com as fortes posturas da Igreja sobre questões controversas e os recentes escândalos de abuso sexual, é difícil encontrar quem escolha ser católico de boa vontade. Embora eu saiba que isso não é verdade, às vezes parece que não há muito a oferecer.Devo imaginar que também foi difícil para ti evangelizar em meio à perseguição religiosa, Beato Pro. A possibilidade de ser morto por tua fé não é um grande atrativo quando se trata de evangelização.Ainda assim, tu não desististe da fé e de ajudar os outros a vivê-la, apesar da reputação menos do que estelar, e eu também não quero desistir.Quando eu estiver em uma situação em que tenha a oportunidade de evangelizar, por favor, dá-me as palavras certas, Beato Pro. Permite-me estar aberto aos impulsos do Espírito Santo. Coloca-me em situações com pessoas que estão curiosas e ansiando por fé. Quando esses momentos surgirem, dá-me a graça de ser um bom evangelizador e explicar por que ainda sou católico, apesar de sua impopularidade. Ajuda-me a usar a bondade de Cristo para superar uma reputação menos do que estelar!Por favor, também tenha em mente minhas outras intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 5}
+
+Jesus, ninguém sofreu mais do que Tu, e certamente não de forma mais injusta! No entanto, Tu enfrentaste esse sofrimento com tanta paz e paciência. Obrigado por sofrer por mim!Embora não tanto quanto o nosso Senhor, você também sofreu fisicamente, Beato Pro. De fato, foram as suas frequentes doenças de estômago que fizeram seus superiores concordarem em mandá-lo de volta ao México, apesar dos perigos que te esperavam lá.Quando estou sofrendo, a última coisa que quero fazer é ajudar as pessoas, Beato Pro. Na verdade, costumo apenas reclamar do quanto estou sofrendo!Você pode me ajudar a ser mais paciente no sofrimento? Ajude-me a unir minhas provações a Cristo. Permita-me usar meu sofrimento para dar glória a Deus em vez de reclamar.Também peço neste momento que você interceda por mim e por todos os meus entes queridos que estão sofrendo de enfermidades, especialmente as do estômago como você sofreu.Por favor, também mantenha em mente minhas intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 6}
+
+Obrigado, Senhor, pelo dom das vocações como forma de Te servir e amar!Beato Pro, foi a inspiração da sua irmã que te levou a pensar na sua própria vocação para a vida religiosa. Quando ela decidiu entrar para o convento, foi aí que você começou a pensar no sacerdócio. A vocação dela inspirou a sua!
+Por favor, permita que eu faça o mesmo na vida daqueles que estão ao meu redor. Permita que a maneira como vivo minha própria vocação inspire outros. Ajude minha vocação a apontar outros para Cristo, assim como a vocação da sua irmã fez por você. Permita que eu ofereça meu trabalho como forma de inspirar outros. Interceda por mim pela minha própria vocação, e me ajude a aceitá-la de forma voluntária e alegre. Se possível, ajude meu trabalho a inspirar um futuro santo, assim como a vocação da sua irmã inspirou!Por favor, também interceda pelas minhas outras intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 7}
+
+Jesus, Tu elevaste o sacerdócio sendo um sacerdote. Deste aos nossos padres grandes responsabilidades: a capacidade de perdoar pecados, administrar os sacramentos e, acima de tudo, nos proporcionar Teu Corpo e Sangue.Beato Pro, seu sacerdócio não deve ter sido fácil. Apesar das dificuldades normais, você também estava doente e perseguido constantemente por ser padre. O colarinho clerical era tão visado que você frequentemente recorria a disfarces para administrar os sacramentos.Beato Pro, por favor, proteja os sacerdotes de todo mal. Mude o coração daqueles que atacam e perseguem os padres. Proteja-os especialmente de Satanás. Quando forem tentados, dê-lhes mentores e guias para ajudá-los. Encha-os da orientação do Espírito Santo. Permita que sejam recebidos com gratidão por suas congregações!Também peço que abra o coração de mais homens ao sacerdócio. Ajude-me a sempre fomentar vocações. Lembre-me de agradecer meus padres!Por favor, também mantenha em mente minhas intenções: \textbf{(Diga suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 8}
+
+Senhor, Tu valorizas todo sacrifício, mas acredito que o sacrifício dos
+mártires deve ser particularmente significativo para Ti. Obrigado pelo exemplo
+que os mártires nos dão.Beato Pro, você nunca abandonou sua fé apesar de ser
+injustamente preso e morto. Na verdade, você sabia que isso provavelmente seria
+resultado do seu ministério e assim mesmo o fez. Mesmo em sua execução, estava
+mais preocupado em louvar a Deus e perdoar seus assassinos do que com sua
+própria segurança.E ainda assim, às vezes tenho medo até de dizer que sou
+cristão em público, apenas por medo de ridículo ou constrangimento! Beato Pro,
+ajude-me a ter mais coragem na minha fé. Quando estiver diante de uma situação
+desconfortável, permita que eu seja corajoso em vez de fraco. Ajude-me a
+aproveitar toda oportunidade para evangelizar, mesmo que isso me assuste.
+Livre-me do medo. Encha-me das virtudes da perseverança, fortaleza e coragem na
+fé!Enquanto peço por sua intercessão para nunca passar por essa situação,
+permita que eu seja forte o suficiente para dar a vida pela minha fé, se for
+necessário.Também peço que mantenha em mente minhas intenções: \textbf{(Diga
+suas intenções aqui)} Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Dia 9}
+
+Senhor, sei que Tu ouves e respondes todas as minhas orações, sejam elas ditas em privado ou publicamente. Obrigado, porém, pelo dom desta comunidade para rezar junto!Beato Pro, obrigado pelo exemplo de sua vida! Sua alegria e entusiasmo na fé são inspiradores. Além disso, o modo como morreu de forma sacrificial e o espírito de perdão nos levam a exclamar contigo “Viva Cristo Rei!”Por favor, ouça as orações de todos que rezaram esta novena comigo, Beato Pro. Interceda por nós diante de Deus. Apresente-lhe todas as intenções que trouxemos em nossos corações para esta novena, especialmente: \textbf{(Diga suas intenções aqui)} Obrigado por sua inspiração e intercessão, Beato Pro!Viva Cristo Rei!
+
+Rezar a \textbf{\nameref{sub:Oração Final}}.
+
+\subsection{Oração Final}\label{sub:Oração Final} % (fold)
+
+\subsubsection{Oração do Beato Miguel à Virgem Maria}
+
+\settowidth{\versewidth}{para amar o meu e o vosso Deus com o sacrifício de todo o meu ser.\\!}
+\begin{verse}[\versewidth]
+
+\[\textbf{Pai-Nosso, Ave-Maria, Glória}\]
+
+Deixai-me viver ao vosso lado, minha Mãe,\\
+para fazer companhia a vossa solidão\\
+e vossa profunda dor!\\!
+
+Deixai-me sentir em minha alma\\
+o pranto doloroso de vossos olhos\\
+e o abandono de vosso coração!\\!
+
+Não quero, no caminho da minha vida,\\
+desfrutar da alegria de Belém, adorando o Menino Jesus,\\
+em vossos braços virginais.\\!
+
+Não quero desfrutar, em vosso humilde casa de Nazaré,\\
+da presença querida de Jesus Cristo.\\!
+
+Nem quero unir-me ao coro dos anjos\\
+em vossa gloriosa Assunção!\\!
+
+Quero, em minha vida\\
+o desprezo e a zombaria do Calvário;\\
+Quero sofrer a agonia lenta de vosso Filho,\\
+o desprezo, a ignomínia, a infâmia da Cruz.\\!
+
+Quero, ó Virgem Dolorosa, estar junto de Vós, de pé,\\
+para fortificar meu espírito com vossas lágrimas,\\
+para consumar o meu sacrifício com vosso martírio,\\
+para sustentar meu coração com vossa solidão,\\
+para amar o meu e o vosso Deus com o sacrifício de todo o meu ser.\\!
+
+\end{verse}
+
+\versicle. Rogai por nós, Beato Miguel Pro,
+
+\response. Para que sejamos dignos das promessas de Cristo.
+
+\vfill
+
+\begin{center}
+\subsection*{Fontes:}
+Adaptado de: 
+ \underline{\href{https://pt.churchpop.com/a-historia-do-padre-martir-que-gritou-viva-cristo-rei-antes-de-morrer/}{Church Pop }} e \underline{\href{https://www.praymorenovenas.com/fr-miguel-pro-novena}{Pray More Novenas}}.
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,183 @@
+\documentclass[a4paper,14pt,twoside]{extarticle} \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% Fonte Caladea se existir, senão lmodern
+\IfFileExists{caladea.sty}{
+  \usepackage{caladea}
+}{
+  \usepackage{lmodern} }
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo após seções
+
+% Ajuste do recuo de parágrafo
+\setlength{\parindent}{1.5em}
+
+% Centralizar títulos
+\titleformat{\section}
+  {\normalfont\centering\bfseries\Large}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\centering\bfseries\large}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\centering\bfseries}{\thesubsubsection}{1em}{}
+
+% -------------- Símbolos de Versículo e Resposta --------------
+% Definição do símbolo (a “barrinha” inclinada)
+\makeatletter
+\newcommand{\vers@resp@sym}{%
+  \raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}%
+}
+% macro interna que sobrepõe a barrinha e a letra V ou R
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{%
+     \hidewidth\kern#1\vers@resp@sym\hidewidth\cr
+     #2\cr
+  }}%
+}
+% comandos públicos \versicle e \response
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{\textbf{V}}}
+  \DeclareRobustCommand{\response}{\vers@resp{0pt}{\textbf{R}}}
+\makeatother
+% ^------------- Símbolos de Versículo e Resposta -------------^
+
+% Rodapé com imagem e página
+% Ajuste para cabeçalho do fancyhdr
+\setlength{\headheight}{18pt} % Ajuste recomendado pelo warning do fancyhdr
+\pagestyle{fancy}
+% ---- Cabeçalho ------------
+\fancyhf[C]{}
+% ----- Rodapé --------------
+\fancyfoot[LO,LE]{%
+  \includegraphics[scale=0.2]{assets/cross.png}\quad
+  \textit{Novena a \textbf{São Martinho de Tours}}
+}
+\fancyfoot[RO,RE]{\thepage}
+
+\begin{document}
+
+
+\begin{center}
+  {\huge Novena a São Martinho de Tours}
+\end{center}
+
+
+\say{Poucos personagens podem ter a sua história resumida em uma única ação tão poderosa a ponto de permanecer indelével e profunda em uma vida. São Martinho de Tours pertenceu a uma categoria especial de santos.}
+
+
+\begin{center}
+  \rule{1.0\textwidth}{0.4pt}
+\end{center}
+
+\tableofcontents
+\thispagestyle{empty}
+
+
+\newpage
+\section{História}
+
+Seu famoso manto é a antonomásia de um homem que nasceu em 316 ou 317, ao término do tardo Império Romano, na Panônia, hoje Hungria.
+
+Filho de um tribuno militar, Martinho viveu em Pavia porque seu pai, um veterano do exército, havia recebido de presente um terreno naquela cidade.
+Seus pais eram pagãos, mas a criança era atraída pelo cristianismo; com apenas 12 anos, queria ser asceta e retirar-se para o deserto. Mas, um edito imperial interpôs a farda e a espada ao seu sonho de oração em solidão. Por isso, Martinho teve que se alistar e acabou em um quartel na Gália.
+
+\subsection{Metade ao pobre Jesus}
+
+Seu gesto do manto ocorreu em torno do ano 335. Como membro da guarda imperial, o jovem soldado era muito requerido para as rondas noturnas. Em uma delas, durante o inverno, Martinho deparou-se, a cavalo, com um mendigo seminu. Movido de compaixão, tirou seu manto, o cortou em duas partes e deu a metade ao pobre. Na noite seguinte, Jesus apareceu-lhe em sonho, usando a metade do manto, dizendo aos anjos: "Este aqui é Martinho, o soldado romano não batizado: ele me cobriu com seu manto". O sonho impressionou muito o jovem soldado, que, a festa da Páscoa seguinte foi batizado.
+Por vinte anos, ele continuou a servir o exército de Roma, dando testemunho da sua fé em um ambiente tão distante dos seus sonhos de adolescente. Mas, ele ainda tinha uma longa vida para ser vivida.
+
+\subsection{Do mosteiro à púrpura}
+
+Logo que pôde, ao ser dispensado do exército, foi ter com o Dom Hilário, bispo de Poitiers, firme opositor da heresia ariana.
+Esta oposição do purpurado custou-lhe o exílio, pois o imperador Constâncio II era um seguidor da doutrina de Ário. No entanto, Martinho tinha ido visitar a sua família na Panônia. Ao saber da notícia, retirou-se para um mosteiro perto de Milão.
+Quando o Bispo voltou do exílio, Martinho foi visitá-lo, obtendo dele a permissão para fundar um mosteiro perto de Tours. Assim, vivendo uma vida austera em cabanas, o ex-soldado, - que havia dado seu manto a Jesus, - tornou-se pobre como desejava. Rezava e pregava a fé católica em terras francesas, onde ficou conhecido por muitos.
+Sua popularidade transformou-se em nomeação como Bispo de Tours, em 371. Martinho aceitou, mas com seu estilo próprio de vida: não quis viver como príncipe da Igreja, para que as pessoas - pobres, presos e enfermos - continuassem a encontrar abrigo sob seu manto.
+São Martinho viveu nas adjacências dos muros da cidade, no mosteiro de Marmoutier, o mais antigo da França. Dezenas de monges o seguiram, muitos deles, pertenciam à casta nobre.
+
+\subsection{Um verdadeiro cavaleiro}
+
+Em 397, em Condate, atual Candes de Saint-Martin, o Bispo de 80 anos partiu com a missão de reconstituir um cisma surgido entre o clero local. Em virtude do seu carisma, pacificou os ânimos. Mas, antes de regressar para Tours, foi acometido por uma série de febres violentas.
+São Martinho de Tours faleceu, deitado na terra nua, conforme o seu desejo. Uma grande multidão participou do enterro de um homem tão querido, generoso e solidário como um verdadeiro cavaleiro de Cristo.
+
+% --- Orações Diárias ---
+\newpage
+
+
+\section{Novena a São Martinho de Tours}
+
+\subsection{Dia 1}
+Ajude-nos a imitar o amor que Ele demonstrou em Sua caridade para com o pobre mendigo que encontrou. São Martinho de Tours, você encontrou um pobre mendigo durante seus primeiros anos como soldado. Comovido com pena do homem, você lhe deu metade de seu manto por amor a Deus. Por favor, leve minhas orações diante de Deus, a quem você amava! Naquela noite, em um sonho, Jesus apareceu para você como o mendigo. Você viu que seu ato de caridade agradou muito a Deus. Reze por mim, para que eu possa estar sempre atento às necessidades dos menos afortunados ao meu redor. Reze para que eu possa estar ansioso para ajudar meus irmãos e irmãs em Cristo, pelo amor de Deus. 
+ 
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 2}
+Ajude-nos a imitar a virtude que você demonstrou ao se desapegar dos bens materiais durante sua vida. São Martinho de Tours, sua consciência começou a incomodá-lo por ter matado em batalha quando tinha vinte anos. Você decidiu recusar seu salário e anunciar que não iria mais para a batalha, pelo amor de Deus. Por favor, continue a levar as minhas súplicas ao trono de Deus! Mais tarde na sua vida, você escolheu viver como eremita e monge. Você escolheu voluntariamente viver na pobreza e lutar pelas riquezas celestiais em vez das mundanas. Reze por mim, para que eu possa crescer num espírito de desapego das coisas mundanas. Reze para que eu possa crescer no desejo pelas verdadeiras riquezas do Céu. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 3}
+Ajude-nos a imitar o amor que Ele demonstrou em sua caridade para com o pobre mendigo que encontrou. São Martinho de Tours, você encontrou um pobre mendigo durante seus primeiros anos como soldado. Comovido com pena do homem, você lhe deu metade de seu manto por amor a Deus. Por favor, leve minhas súplicas diante de Deus, a quem você amava! Naquela noite, em um sonho, Jesus apareceu para você como o mendigo. Você viu que seu ato de caridade agradou muito a Deus. Reze por mim, para que eu esteja sempre consciente das necessidades dos menos afortunados ao meu redor. Reze para que eu esteja ansioso por ajudar meus irmãos e irmãs em Cristo, por amor a Deus. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 4}
+Ajude-nos a imitar a virtude que ele demonstrou ao se desapegar dos bens materiais durante sua vida. São Martinho de Tours, sua consciência começou a incomodá-lo por ter matado em batalha quando tinha vinte anos. Você decidiu recusar seu salário e anunciar que não iria para a batalha, por amor a Deus. Por favor, continue levando minhas súplicas ao trono de Deus! Mais tarde na sua vida, você escolheu viver como eremita e monge. Você escolheu voluntariamente viver na pobreza e lutar pelas riquezas celestiais em vez das mundanas. Reze por mim, para que eu possa crescer num espírito de desapego das coisas mundanas. Reze para que eu possa crescer no desejo pelas verdadeiras riquezas do Céu. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 5}
+Ajude-nos a imitar o amor que ele demonstrou ao escolher fazer o que era certo, independentemente do custo. São Martinho de Tours, você começou a sentir que era errado matar em batalha, à medida que crescia na sua fé cristã. Mesmo enfrentando ridicularização e perdendo o seu salário, você fielmente escolheu recusar-se a matar outros, por amor a Deus. Por favor, leve as minhas petições diante de Deus com tanta fidelidade! Mais tarde na sua vida, você novamente demonstrou grande fortaleza ao pregar contra a heresia ariana. Você sofreu muito por causa dessa pregação, mas nunca vacilou em proclamar a verdade. Reze por mim, para que eu tenha força para fazer o que é certo, independentemente do custo. Reze para que eu nunca permita que os sofrimentos me impeçam de servir a Deus. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 6}
+Ajude-nos a imitar a devoção que ele demonstrou ao pregar a verdade aos outros. São Martinho de Tours, você se converteu à fé cristã quando criança. Durante sua vida adulta, sua devoção a Deus o levou a pregar o Evangelho a seus pais e a converter sua mãe à fé. Por favor, leve minhas petições diante de Deus, a quem você serviu com tanta devoção! Quando os líderes da heresia ariana começaram a ganhar força na Igreja, você pregou corajosamente contra essa heresia e fez tudo o que pôde para proclamar a verdade. Reze por mim, para que eu nunca perca a oportunidade de pregar o Evangelho aos outros. Reze para que eu nunca permita que as dificuldades ou os sofrimentos me impeçam de pregar a Boa Nova. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 7}
+Ajude-nos a imitar o amor que ele demonstrou por Ti ao escolher servir-Te como monge e bispo. São Martinho de Tours, você começou a viver como eremita depois de ser forçado a fugir por pregar contra a heresia ariana. Então, você voltou para Tours e fundou um mosteiro para que outros pudessem servir a Deus na vida monástica. Por favor, leve minhas petições diante de Deus, a quem você serviu de todo o coração! Mais tarde, você foi convidado a se tornar bispo de Tours. Embora não quisesse ser bispo, você foi ordenado e serviu como um santo bispo. Reze por mim, para que eu esteja sempre aberto à vontade de Deus em minha vida. Reze para que eu sempre busque servir a Deus como Ele me chama. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 8}
+Ajude-nos a imitar a devoção que ele demonstrou por você ao viver a vida monástica e fundar mosteiros. São Martinho de Tours, você viveu como eremita em uma ilha depois que os líderes arianos furiosos o forçaram a fugir. Quando voltou da ilha, continuou buscando servir a Deus com devoção. Por favor, leve minhas preces diante de Deus, a quem você serviu com tanta devoção! Você fundou um mosteiro chamado Abadia de Linuge. Durante seu tempo como bispo, você fundou outro mosteiro para que outros pudessem servir a Deus através do monaquismo. Reze por mim, para que eu sempre busque servir a Deus de todo o coração em minha vida. Reze para que eu nunca me canse de buscar fazer a vontade de Deus. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 9}
+Ajude-nos a imitar o amor que ele demonstrou em sua vida de serviço à Sua Igreja. São Martinho de Tours, você começou a dedicar sua vida mais plenamente à Igreja depois de ser dispensado do serviço militar. Você continuou a servir a Deus e à Sua Igreja pelo resto de sua vida. Por favor, continue a levar as minhas petições perante o trono de Deus! Pregou contra o arianismo, viveu a vida monástica e fundou mosteiros. Mais tarde, serviu como bispo santo, apesar de estar relutante em assumir o cargo. Reze por mim, para que eu possa ser um servo de Deus e da Sua Igreja tão devoto como você foi. Reze para que eu esteja sempre ansioso por usar os meus dons ao serviço de Deus. 
+
+Rogai também por (\textbf{menciona a intenção}). Rezar \textbf{\nameref{sub:Oração Final}}
+
+
+\subsection{Oração Final}\label{sub:Oração Final} % (fold)
+
+São Martinho, que cobristes Jesus com teu manto no pobre abandonado, que também possamos imitar-te com nossa vida, cuidando dos menos favorecidos. Ensinai-nos a olhar os pobres e encontrar neles o rosto de Cristo, amar esses irmãos como Jesus nos ensinou. Amém.
+
+
+\versicle. Rogai por nós, São Martinho de Tours,
+
+\response. Para que sejamos dignos das promessas de Cristo.
+
+\vfill
+
+\begin{center}
+\subsection*{Fontes:}
+Adaptado de: 
+ \underline{\href{https://www.vaticannews.va/pt/santo-do-dia/11/11/s--martinho--bispo-de-tours-.html}{Vatican News}}, \underline{\href{https://www.praymorenovenas.com/st-martin-of-tours-novena}{Pray More Novenas}} e \underline{\href{https://santo.cancaonova.com/santo/sao-martinho-de-tours-o-dono-do-manto-que-cobriu-jesus/}{Canção Nova}}.
+\end{center}
+
+
+\end{document}

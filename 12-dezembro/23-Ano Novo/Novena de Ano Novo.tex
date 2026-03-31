@@ -1,0 +1,166 @@
+\documentclass[a4paper,14pt]{extarticle} \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% Fonte Caladea se existir, senão lmodern
+\IfFileExists{caladea.sty}{
+  \usepackage{caladea}
+}{
+  \usepackage{lmodern} }
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo após seções
+
+% Ajuste do recuo de parágrafo
+\setlength{\parindent}{1.5em}
+
+% Centralizar títulos
+\titleformat{\section}
+  {\normalfont\centering\bfseries\Large}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\centering\bfseries\large}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\centering\bfseries}{\thesubsubsection}{1em}{}
+
+% -------------- Símbolos de Versículo e Resposta --------------
+% Definição do símbolo (a “barrinha” inclinada)
+\makeatletter
+\newcommand{\vers@resp@sym}{%
+  \raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}%
+}
+% macro interna que sobrepõe a barrinha e a letra V ou R
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{%
+     \hidewidth\kern#1\vers@resp@sym\hidewidth\cr
+     #2\cr
+  }}%
+}
+% comandos públicos \versicle e \response
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{V}}
+\DeclareRobustCommand{\response}{\vers@resp{0pt}{R}}
+\makeatother
+% ^------------- Símbolos de Versículo e Resposta -------------^
+
+% Rodapé com imagem e página
+\pagestyle{fancy}
+% ---- Cabeçalho ------------
+\fancyhf[C]{}
+% ----- Rodapé --------------
+\fancyfoot[LO,LE]{%
+  \includegraphics[scale=0.2]{assets/cross.png}\quad
+  \textit{Novena de Ano Novo}
+}
+\fancyfoot[RO,RE]{\thepage}
+
+\begin{document}
+
+
+\begin{center}
+  {\huge Novena de Ano Novo}
+\end{center}
+
+
+\tableofcontents
+\thispagestyle{empty}
+
+% --- Vida / Origem da Novena ---
+\newpage
+
+% --- Orações Diárias ---
+\newpage
+
+\section{Orações Iniciais}
+
+Querido Jesus, nós vos agradecemos e vos louvamos por todas as inúmeras maneiras que abençoastes nossas vidas. Nos apresentamos agora para agradecer pelo ano que aqui se encerra e pedir por um próximo ano abençoado.
+
+\section{Orações Diárias}
+
+\subsection{Dia 1}
+
+Sabemos que dependemos de Ti para todas as coisas em nossas vidas, e a Tua providência amorosa mantém as nossas vidas em existência. Ao iniciarmos um novo ano, reconhecemos o Teu poder sobre nossas vidas e buscamos a Tua ajuda em tudo o que precisamos.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos concedas, a nós e a todas as pessoas, as bênçãos espirituais que necessitamos neste novo ano.
+Ajuda-nos a sempre nos voltar para Ti em tudo o que precisamos em nossas vidas. Dá-nos a graça de realmente confiar em Ti em todas as circunstâncias.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 2}
+
+Há muitas coisas materiais de que precisamos para poder viver nossas vidas. Tu sabes melhor do que nós mesmos o que precisamos. Sabemos que és capaz de providenciar tudo o que necessitamos para levarmos nossas vidas adiante.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos concedas, a nós e a todas as pessoas, a assistência material de que precisamos neste novo ano.
+Ajuda-nos a crescer em santidade e virtude em cada oportunidade que Tu colocares em nossas vidas. Dá-nos a graça de crescer em uma dependência santa de Ti a cada dia.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 3}
+
+Ao longo de nossas vidas neste mundo caído, enfrentamos muitas lutas e dificuldades às vezes. Sabemos que Tu só permites tal sofrimento para o bem de nossas almas e das almas dos outros. E sabemos que Tu podes trazer felicidade às nossas vidas aqui na Terra, se for a Tua vontade.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos concedas, a nós e a todas as pessoas, a bênção da felicidade em nossas vidas durante o novo ano.
+Ajuda-nos a sempre fazer do nosso relacionamento contigo nossa principal prioridade na vida. Dá-nos a graça de nos aproximarmos mais de Ti a cada dia de nossas vidas.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 4}
+
+Sabemos que Tu realmente sabes o que é melhor para nós em nossas vidas. Muitas vezes pensamos que sabemos qual tipo de ajuda mais precisamos em nossas vidas, mas há também muitas coisas das quais não percebemos que precisamos da Tua ajuda.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos concedas, a nós e a todas as pessoas, a assistência que não sabemos que precisamos em nossas vidas durante este novo ano.
+Ajuda-nos a realmente depender de Ti para todas as coisas a cada dia. Dá-nos a graça de buscar a santidade em cada circunstância que enfrentarmos.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 5}
+
+Tu sabes o que cada um de nós precisa, melhor do que nós mesmos. Tu conheces as nossas lutas e sofrimentos, e vês toda a nossa dor. Tu podes trazer bênçãos e graça para todas as pessoas que passaram por grandes dificuldades durante o ano passado.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que ajudes neste novo ano todos os que sofreram grandes dificuldades neste último ano.
+Ajuda-nos a voltar-nos para Ti em nossas necessidades a cada dia de nossas vidas. Dá-nos a graça de nos aproximarmos mais de Ti em todas as circunstâncias, até mesmo em meio ao sofrimento.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 6}
+
+Neste mundo caído, enfrentamos muitas lutas e dificuldades às vezes. Não é sempre fácil entregar nossas vidas completamente a Ti com confiança quando estamos no meio de lutas. Tu podes nos ajudar a crescer em uma confiança mais profunda em Ti em nossas vidas.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos ajudes, a nós e a todas as pessoas, a crescer em uma confiança mais profunda em Ti.
+Ajuda-nos a Te servir de forma mais devotada a cada dia de nossas vidas. Dá-nos a graça de verdadeiramente entregar todas as partes de nossas vidas a Ti.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 7}
+
+Sabemos que Tu és onisciente e que realmente sabes o que é melhor para nossas vidas. Mas nem sempre aceitamos a Tua vontade para nós com verdadeira abertura. Tu podes nos ajudar a crescer em uma maior abertura à Tua vontade.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos ajudes, a nós e a todas as pessoas, a crescer em abertura à Tua vontade neste novo ano.
+Ajuda-nos a crescer em cada virtude que precisamos para a santidade. Dá-nos a graça de Te servir fielmente em todas as circunstâncias de nossas vidas.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 8}
+
+Tu nos chamas a ter um relacionamento íntimo Contigo em nossas vidas. Mas nem sempre é fácil para nós permanecer perto de Ti. Tu podes nos ajudar a crescer em amizade Contigo ao longo deste novo ano.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos ajudes, a nós e a todas as pessoas, a crescer em uma amizade mais profunda Contigo durante o novo ano.
+Ajuda-nos a sempre fazer do nosso relacionamento Contigo nossa principal prioridade na vida. Dá-nos a graça de Te servir de forma mais devotada a cada dia de nossas vidas.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\subsection{Dia 9}
+
+Tu queres que cada um de nós Te sirva fielmente e se comprometa a viver vidas santas. Apesar das nossas boas intenções, às vezes vacilamos no nosso compromisso com a santidade e em Te servir fielmente. Tu podes nos ajudar a fortalecer nosso compromisso com a santidade neste ano.
+Por favor, derrama a Tua graça sobre as nossas vidas neste novo ano, e pedimos especialmente hoje que nos ajudes, a nós e a todas as pessoas, a renovar nosso compromisso de viver vidas santas durante este novo ano.
+Ajuda-nos a crescer em todas as virtudes que precisamos para a santidade. Dá-nos a graça de Te amar acima de tudo em nossas vidas.
+E nós pedimos especialmente nesta novena: (\textit{mencione suas intenções aqui.})
+
+\section{Oração Final} \label{oracao-final}
+
+\[
+\textbf{Reza-se 1 Pai Nosso, 3 Ave Marias, 1 Glória ao Pai.}
+\]
+
+\vfill
+
+\begin{center}
+\subsection*{Fontes:}
+Adaptado de: \underline{\href{https://www.praymorenovenas.com/new-year-novena}{Pray More Novenas}}.
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,135 @@
+\documentclass[a4paper,14pt,twoside]{extarticle} \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% Fonte Caladea se existir, senão lmodern
+\IfFileExists{caladea.sty}{
+  \usepackage{caladea}
+}{
+  \usepackage{lmodern} }
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo após seções
+
+% Ajuste do recuo de parágrafo
+\setlength{\parindent}{1.5em}
+
+% Centralizar títulos
+\titleformat{\section}
+  {\normalfont\centering\bfseries\Large}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\centering\bfseries\large}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\centering\bfseries}{\thesubsubsection}{1em}{}
+
+% -------------- Símbolos de Versículo e Resposta --------------
+% Definição do símbolo (a “barrinha” inclinada)
+\makeatletter
+\newcommand{\vers@resp@sym}{%
+  \raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}%
+}
+% macro interna que sobrepõe a barrinha e a letra V ou R
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{%
+     \hidewidth\kern#1\vers@resp@sym\hidewidth\cr
+     #2\cr
+  }}%
+}
+% comandos públicos \versicle e \response
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{\textbf{V}}}
+  \DeclareRobustCommand{\response}{\vers@resp{0pt}{\textbf{R}}}
+\makeatother
+% ^------------- Símbolos de Versículo e Resposta -------------^
+
+% Rodapé com imagem e página
+% Ajuste para cabeçalho do fancyhdr
+\setlength{\headheight}{18pt} % Ajuste recomendado pelo warning do fancyhdr
+\pagestyle{fancy}
+% ---- Cabeçalho ------------
+\fancyhf[C]{}
+% ----- Rodapé --------------
+\fancyfoot[LO,LE]{%
+  \includegraphics[scale=0.2]{assets/cross.png}\quad
+  \textit{Novena de \textbf{Belém}}
+}
+\fancyfoot[RO,RE]{\thepage}
+
+\begin{document}
+
+
+\begin{center}
+  {\huge Novena de Belém}
+\end{center}
+
+Esta oração da Novena é projetada para nos ajudar a amar mais Jesus Cristo e a crescer na virtude ao encontrarmos Jesus em nossos corações. Como você deve saber, as novenas geralmente são feitas para rezar por alguma necessidade profunda na vida de uma pessoa, e esta oferece essa oportunidade todos os dias. No entanto, a principal oração sugerida nesta novena é o crescimento em uma virtude específica para cada dia.
+
+{\centering \rule{1.0\textwidth}{0.4pt}}
+
+\thispagestyle{empty}
+
+\section{Novena de Belém}
+
+\vspace{1cm}
+
+\subsection{Novena de Belém - Dia 1}
+
+Ó Menino Jesus, admiro-me hoje que Você, o Deus do céu e da terra, tenha escolhido descer à terra para minha salvação. O céu não pode contê-lo e nem a terra suportá-lo. Você veio não como um homem, mas como um bebê, em fraqueza e vulnerabilidade. Como um menino indefeso, você mostrou que a grandeza consiste em ocupar a posição mais baixa, não a mais alta. Tal humildade está além da minha imaginação. Conceda que neste dia eu possa começar a adquirir uma maior humildade, regozijando-me em seu dom e aceitando sua providência da mesma forma que Maria e José, seus pais terrestres, aceitaram a vontade do Pai em suas vidas. Por favor, aceite esta oferta de minha oração da novena que trago: (dê o nome do seu pedido especial). É uma grande necessidade em minha vida. Eu quero somente a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+
+\subsection{Novena de Belém - Dia 2}
+
+Ó Jesus, ao contemplar sua humildade deitado na manjedoura, percebo por que Deus escolheu São José para ser seu pai terreno, seu guardião durante a infância e juventude. Ele era tão dócil, tão aberto a fazer a vontade de Deus acima de tudo. Um homem de força tranquila, José amava Maria, sua mãe, com notável fidelidade e devoção. Assim como você, ó Salvador, mais tarde ensinaria, José desejava servir. Esse desejo o tornava sempre pronto para ouvir sua voz. O desejo de servir também o fez obediente à sua ordem e destemido diante de graves perigos.
+Ó Jesus, como eu quero ser como José, pronto para fazer sua vontade a qualquer momento. Ajude-me a ouvir sua voz através do Espírito de Deus que sugere ao meu coração fazer o bem. Fortaleça minha determinação para que, uma vez que eu conheça sua vontade, eu a cumpra com prontidão de amor. Por favor, aceite esta oferta da minha oração de novena que trago: (dê o nome do seu pedido especial). É uma grande necessidade em minha vida. Eu quero somente a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+
+\subsection{Novena de Belém - Dia 3}
+
+Ó Jesus, esta noite o ar está repleto com o perfume da generosidade. Os pastores deixaram seus rebanhos, o que nunca fariam, porque um dever maior os chamou e uma alegria maior os preencheu, trazendo sua lealdade a você, o Rei dos reis. Os magos fizeram uma longa jornada e trouxeram, não algo qualquer, mas os presentes mais preciosos que podiam. Maria e José! Que corações generosos eles tiveram, que deram suas vidas inteiras a você, seu Filho e Salvador! Eu só posso imaginar como deve ter sido segurar você, o Rei menino, em seus braços. E acima de tudo, você deixou os corredores da sala do trono celestial para nascer em um estábulo sujo. Sua generosidade é a maior de todas. Você, sendo rico, tornou-se pobre por nossa causa para que pudéssemos ter a maior riqueza de todas, as riquezas do céu. Ensina-me a doar-me. Encha-me, ó Jesus, com um espírito de generosidade para modelar minhas ações nas suas. E mostre-me como, sendo generoso com meu tempo, meu talento, meu dinheiro, eu posso ajudar os outros. Por favor, aceite esta oferta da minha oração de novena que trago: (dê o nome do seu pedido especial). É uma grande necessidade em minha vida. Eu quero somente a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+\subsection{Novena de Belém - Dia 4}
+
+Ó Jesus, Rei Menino e Mestre de todos. Hoje vejo diante de mim a pobreza que você escolheu por amor a mim e a toda humanidade. Ninguém na terra jamais conheceu as riquezas que você possuía no céu, a glória inimaginável da presença de seu Pai. Mas tudo isso você deixou de boa vontade e se esvaziou pelo bem de pobres almas como a minha. Você livremente abraçou tamanha pobreza para que eu pudesse ser rico, não com os bens deste mundo, mas com os bens imperecíveis do céu. Sua presença na manjedoura de Belém não é um acidente. Você guiou todo o processo e destino com seu conhecimento divino. E escolheu tais circunstâncias humildes nas quais nascer para que eu pudesse aprender a nunca me colocar acima dos outros, mas estar sempre disposto a me abaixar e me esvaziar da vanglória. Conceda que eu também, seguindo seu exemplo, abrace a posição mais baixa para ganhar a maior alegria de todas, o conhecimento de sua presença no céu. Por favor, aceite esta oferta da minha oração de novena que trago: (dê o nome do seu pedido especial). É uma grande necessidade em minha vida. Eu quero somente a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+\subsection{Novena de Belém - Dia 5}
+
+Ó Jesus, meu Senhor e meu Deus. Quando considero tudo o que José e Maria tiveram que suportar em sua jornada para Belém, admiro sua perseverança. Eu tão facilmente desisto em minha busca por coisas boas e falho em viver uma vida semelhante a Cristo. Por favor, ajude-me a aceitar as surpresas inesperadas que sua providência traz à minha vida. Ajude-me a ser diligente em minha própria jornada de vida enquanto tento cumprir sua vontade para mim. Com Maria, tua mãe, dá-me a graça de dizer: "Faça-se em mim segundo a tua palavra,". Com José ajuda-me a aceitar as difíceis surpresas na minha vida e a honrar sempre os teus servos escolhidos. Concede-me um espírito de obediência inquestionável à tua vontade e uma disposição para empreender uma jornada para onde quer que me conduzas. Acima de tudo, ajude-me a perseverar para que um dia eu possa adorar em sua presença como naquela noite em Belém. Por favor, aceite esta oferta da minha oração da novena que trago: (diga o nome do seu pedido especial). É uma grande necessidade em minha vida. Quero apenas a sua glória nesta situação e oro para que a sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+\subsection{Novena de Belém - Dia 6}
+
+Ó meu Jesus, espero pelo dia do Natal porque quero ajoelhar-me diante de seu presépio. Ajoelho-me porque você é o Rei dos reis e Senhor dos senhores. Sei que o seu nascimento foi um presente do mais puro motivo de todos — o amor. Maria, tua mãe, também te carregava no ventre com um amor além de qualquer expressão. O único desejo dela era que o mundo te conhecesse e te amasse. E José também foi obediente à vontade de Deus porque teve seus motivos purificados. Seu único desejo era servir a Ti e Maria, sua esposa. Quando olho para a minha própria vida, percebo que muitas vezes meus motivos são mistos. Quero a tua glória e quero te conhecer melhor, mas às vezes quero um pouco de reconhecimento para que os outros vejam como sou bom. Muitas vezes penso na minha própria glória. Em um nível mais profundo, desejo que minhas intenções sejam puras, querer o que você quer e não desejar coisas supérfluas e desnecessárias. Ajude-me a buscar a tua glória e honra em todas as coisas. Ajude-me a servir a vocês sem expectativa de recompensa neste mundo. Conhecer-te e ser amado por ti já é recompensa suficiente! Por favor, aceite esta oferta da minha oração da novena que trago: (diga o nome do seu pedido especial). É uma grande necessidade em minha vida. Quero apenas a sua glória nesta situação e oro para que a sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+\subsection{Novena de Belém - Dia 7}
+
+Ó Jesus, o Rei da paz! Hoje reflito sobre o nome dado a ti no nascimento: Emanuel, Deus conosco. De todas as coisas que estimo, quero mais do que tudo a tua presença na minha vida. Até mesmo milagres não podem se comparar à alegria da tua presença. Nossa vida no céu não será um grande milagre, mas o contínuo e maravilhoso sentido de tua presença. Isso sozinho traz paz à minha alma. Isaías, o profeta, previu o teu nome Emanuel. Toda a religião de Israel prometia que o Senhor viria e habitaria entre o seu povo. Deus deu até mesmo a Israel um sinal, a nuvem de glória que pairava sobre a tenda do encontro e o templo. Maria, tua mãe, tornou-se o novo templo para abrigar a tua presença divina. Isto é o que começou aquela noite em Belém. Por isso, peço-te que seja meu Emanuel. Esteja comigo e em mim. Mas também trabalhe em mim para que eu esteja contigo. Como diz Santo Agostinho, quando estamos longe de ti, estamos fora de nós mesmos, pois só podemos nos conhecer conhecendo-te e valorizando tua presença em nossas vidas. Rei Jesus, tu és a minha paz; tu és o meu contentamento. Concede que eu conheça a tua presença na minha vida para que eu esteja em paz e confie em ti para tudo na minha vida. Ajuda-me a estar contente contigo sozinho, pois só tu és a fonte de vida e felicidade. Por favor, aceite esta oferta da minha oração da novena que trago: (diga o nome do seu pedido especial). É uma grande necessidade em minha vida. Quero apenas a sua glória nesta situação e oro para que a sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+Amém.
+
+\subsection{Novena de Belém - Dia 8}
+
+Ó Querido Rei Menino, meu Jesus. Como me maravilho esta noite ao olhar para a sua manjedoura. É aqui que você virá para se deitar e é aqui que eu vou adorá-lo. Não há outro que mereça ser amado e adorado como você. Como menino, você é fraco e vulnerável, mas como Deus, você é todo-poderoso e onisciente. Você deve ser obedecido porque é Deus. Confesso o quanto é difícil para mim obedecer. Minha vontade teimosa quer fazer o que eu quero no momento. Contudo, sei também que a obediência é o caminho para a felicidade. Ajude-me a escolher a obediência em assuntos pequenos e grandes. Ajude-me a rejeitar o pensamento ímpio de que servi-lo em obediência é escravidão e a abraçar a obediência como o caminho para a liberdade. Todas as pessoas envolvidas no seu nascimento foram servos obedientes do Rei. José obedeceu à mensagem do anjo. Maria cantou seu Magnificat pela alegria de servir a você. Os pastores correram para Belém em obediência. Os Magos viajaram longas distâncias seguindo a estrela em obediência. Como posso eu, seu humilde servo, não dar minha obediência? Por favor, aceite esta oferta da minha oração de novena que trago: (diga seu pedido especial). É uma grande necessidade em minha vida. Quero apenas a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+\subsection{Novena de Belém - Dia 9}
+
+Ó Jesus, hoje eu te adoro e te venero como o Rei dos reis e o Senhor dos senhores. Você é o Deus todo-poderoso e Príncipe da Paz. Você é o Caminho, a Verdade e a Vida. Você é o próprio amor. Foi o amor que moveu seu coração a vir para a terra e a nascer como um bebê. Foi o amor que nos deu o ensinamento celestial da Verdade. Foi o amor que curou os doentes e ressuscitou os mortos. Foi o amor que nos deu seu corpo e sangue na Eucaristia. Existem três grandes virtudes: fé, esperança e amor. Mas a maior delas é o amor. Sei que o amor deve ser o motivo e o fundamento de todas as minhas ações e pensamentos. Por favor, entre no meu coração hoje e me dê esse amor que não sou capaz de produzir. Ajuda-me a crescer em todas as virtudes pelas quais orei, mas acima de tudo no amor. Por favor, aceite esta oferta da minha oração de novena que trago: (diga seu pedido especial). É uma grande necessidade em minha vida. Quero apenas a sua glória nesta situação e oro para que sua misericórdia desça sobre nós. Santa Maria, rogai por nós! São José, rogai por nós! Ó Jesus, tenha misericórdia de nós!
+
+
+\vfill
+
+\begin{center}
+\subsection*{Fontes:}
+Adaptado de: 
+ \underline{\href{https://www.praymorenovenas.com/bethlehem-novena}{Pray More Novenas}}.
+\end{center}
+
+
+\end{document}

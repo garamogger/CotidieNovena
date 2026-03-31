@@ -1,0 +1,190 @@
+\documentclass[a4paper,14pt,twoside]{extarticle} \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+
+% Fonte Caladea se existir, senão lmodern
+\IfFileExists{caladea.sty}{
+  \usepackage{caladea}
+}{
+  \usepackage{lmodern} }
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{titlesec}
+\usepackage{epigraph}
+\usepackage{dirtytalk}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo após seções
+
+% Ajuste do recuo de parágrafo
+\setlength{\parindent}{1.5em}
+
+
+% Centralizar títulos
+\titleformat{\section}
+{\normalfont\centering\bfseries\Large}{\thesection -}{.2em}{}
+
+\titleformat{\subsection}
+  {\normalfont\centering\bfseries\large}{}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\centering\bfseries}{}{1em}{}
+
+% -------------- Símbolos de Versículo e Resposta --------------
+% Definição do símbolo (a “barrinha” inclinada)
+\makeatletter
+\newcommand{\vers@resp@sym}{%
+  \raisebox{0.2ex}{\rotatebox[origin=c]{-20}{$\m@th\rceil$}}%
+}
+% macro interna que sobrepõe a barrinha e a letra V ou R
+\newcommand{\vers@resp}[2]{%
+  {\ooalign{%
+     \hidewidth\kern#1\vers@resp@sym\hidewidth\cr
+     #2\cr
+  }}%
+}
+% comandos públicos \versicle e \response
+\DeclareRobustCommand{\versicle}{\vers@resp{-0.1em}{\textbf{V}}}
+  \DeclareRobustCommand{\response}{\vers@resp{0pt}{\textbf{R}}}
+\makeatother
+% ^------------- Símbolos de Versículo e Resposta -------------^
+
+% Rodapé com imagem e página
+% Ajuste para cabeçalho do fancyhdr
+\setlength{\headheight}{18pt} % Ajuste recomendado pelo warning do fancyhdr
+\pagestyle{fancy}
+% ---- Cabeçalho ------------
+\fancyhf[C]{}
+% ----- Rodapé --------------
+\fancyfoot[LO,LE]{%
+  \includegraphics[scale=0.2]{assets/cross.png}\quad
+  \textit{Novena a \textbf{Beato Anacleto Soares Flores}}
+}
+\fancyfoot[RO,RE]{\thepage}
+
+\begin{document}
+
+
+\begin{center}
+  {\huge Novena a Beato Anacleto Soares Flores}
+\end{center}
+
+O Beato Anacleto Gonzalez Flores foi um mártir que viveu entre os séculos XIX e XX. Viveu no México durante a Guerra Cristera. Foi torturado e morto por causa da sua fé durante a perseguição aos católicos pelo governo anticatólico do México.
+
+{\centering \rule{1.0\textwidth}{0.4pt}}
+
+\tableofcontents
+\thispagestyle{empty}
+
+
+\newpage
+\section{História}
+
+Bento Anacleto González Flores nasceu em 1888. Era um dos doze filhos e seus pais eram muito pobres. Anacleto foi batizado no dia em que nasceu.
+
+Durante a infância de Anacleto, ele mostrou ser muito inteligente. Um padre amigo da família percebeu sua inteligência e sugeriu que ele frequentasse um seminário de ensino médio. Anacleto destacou-se nos estudos no seminário, mas acabou discernindo que não era chamado para o sacerdócio.
+
+Após sair do seminário, Anacleto começou a estudar Direito. Em 1922, concluiu seus estudos jurídicos e tornou-se advogado. Também se casou com Maria Concepción Guerrero no mesmo ano. Os dois tiveram, eventualmente, dois filhos.
+
+Quando jovem, Anacleto esteve profundamente envolvido em muitas atividades religiosas. Ia à missa todos os dias, praticava obras de caridade, visitava presos e dava aulas de Catecismo.
+
+À medida que o governo do México tornou-se mais violentamente anticatólico, Anacleto passou a lutar contra essa perseguição. Ele fundou uma revista chamada La Palabra, na qual desafiava os componentes anticatólicos e anticlericais da Constitución de 1917.
+
+Também fundou e liderou uma organização chamada Unión Popular. O objetivo da União Popular era organizar os católicos para resistirem a essas políticas anticatólicas.
+
+Embora inicialmente Anacleto apoiasse a resistência passiva contra a perseguição governamental, o assassinato de quatro membros da Associação Católica da Juventude Mexicana mostrou-lhe que os católicos teriam de resistir de forma mais ativa. Ele entrou para a Liga Nacional para la Defensa de la Libertad Religiosa.
+
+Em 1927, começou a Guerra Cristera, quando os católicos mexicanos pegaram em armas contra o governo anticatólico. Anacleto fez discursos e escreveu panfletos encorajando outros a apoiar os cristeros de todas as formas possíveis, seja com dinheiro, hospedagem ou alimentos.
+
+Em poucos meses, Anacleto foi capturado pelo governo. Ele foi acusado falsamente pelo assassinato de um americano chamado Edgar Wilkens, embora o governo soubesse que ele não o matou.
+
+Anacleto foi levado à Prisión de Colorado. Lá, foi torturado sendo pendurado pelos polegares até que eles se deslocaram, recebeu um golpe tão forte no ombro com um rifle que fraturou o osso e teve os pés cortados. Apesar de seus sofrimentos, Anacleto recusou-se a fornecer informações sobre seus companheiros católicos.
+
+Em 1º de abril de 1927, Anacleto foi executado por um pelotão de fuzilamento. Suas últimas palavras antes da morte foram: “Escuchen América por segunda vez: muero, pero Dios no muere. ¡Viva Cristo Rey!”
+
+\newpage
+
+
+\section{Novena a Beato Anacleto Soares Flores}
+
+\subsection{Dia 1}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar o amor por Você, que ele cultivou ao longo de sua vida, desde quando era criança. Beato Anacleto Gonzalez Flores, você foi batizado no dia em que nasceu. Você cresceu em uma família santa que o colocou no caminho da santidade e do serviço a Deus. Por favor, leve minhas petições perante Deus \textbf{(intenções aqui)}, a quem você serviu! Quando jovem, outros suspeitaram que você poderia ter uma vocação ao sacerdócio. Você frequentou um seminário de ensino médio e se abriu para a vontade de Deus em sua vida. Reze por mim, para que eu esteja sempre ansioso para servir a Deus em minha vida, da maneira que Ele me chamar. Reze para que eu esteja ansioso para dedicar minha vida a Deus. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 2}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar a devoção a Você que ele demonstrou ao discernir se tinha uma vocação ao sacerdócio. Beato Anacleto Gonzalez Flores, um amigo sacerdote de sua família reconheceu sua inteligência e seu potencial para ser um bom sacerdote. Ele sugeriu que você entrasse para o seminário de ensino médio, e você começou a discernir como Deus estava chamando você para servi-Lo. Por favor, leve minhas petições perante Deus \textbf{(intenções aqui)}, a quem você serviu tão devotamente! Embora você tenha discernido que Deus não estava chamando você para o sacerdócio, você continuou a servir a Deus de todo coração como leigo pelo resto de sua vida. Reze por mim, para que eu sirva a Deus com tanta devoção quanto você o fez. Reze para que eu esteja aberto a servir a Deus da maneira que Ele me chamar. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 3}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar o amor por Deus que ele demonstrou em sua disposição para servi-Lo da maneira como Você o chamou. Beato Anacleto Gonzalez Flores, você começou a estudar para o sacerdócio em um seminário de ensino médio, sob a sugestão do amigo sacerdote de sua família. Você não discerniu que foi chamado ao sacerdócio, mas continuou a servir a Deus. Por favor, continue a levar minhas petições perante o  \textbf{(intenções aqui)}trono de Deus! Você se casou e teve filhos. Como leigo, você fez tudo o que podia para cumprir a vontade de Deus para sua vida e servi-Lo com devoção. Reze por mim, para que eu esteja aberto a servir a Deus mesmo de maneiras inesperadas. Reze para que eu cresça na minha submissão à vontade de Deus. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 4}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar a virtude que ele demonstrou em suas práticas de obras de misericórdia para com os necessitados. Beato Anacleto Gonzalez Flores, você discerniu que Deus não estava chamando-o para ser sacerdote. Mas isso não levou você a abandonar a busca pela santidade. Em vez disso, você se lançou em práticas santas e obras de caridade, por amor a Deus. Por favor, leve minhas petições perante Deus \textbf{(intenções aqui)}, a quem você amava tão profundamente! Você visitou prisioneiros, cuidou dos pobres e ensinou aulas de catecismo. Você se dedicou de todo coração a servir a Deus. Reze por mim, para que eu cresça no desejo de servir a Deus por meio de obras de misericórdia para com os outros. Reze para que eu esteja sempre ansioso para servir a Deus da maneira que Ele colocar diante de mim. Por favor, também reze por (mencione suas intenções aqui). 
+
+...
+
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 5}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar o amor por Você, que ele demonstrou ao escolher fazer o que era certo, independentemente do custo. Beato Anacleto Gonzalez Flores, você viveu em uma sociedade que era hostil à sua Fé Católica. À medida que o governo se tornou mais violentamente anticatólico, você decidiu fazer tudo o que podia para lutar contra essa injustiça, por mais difícil que pudesse ser. Por favor, faça todo o possível para levar minhas petições perante Deus \textbf{(intenções aqui)}! Seu apoio aos Cristeros, que lutavam contra o governo, levou à sua captura. Embora você tenha sido torturado e, por fim, morto, você permaneceu firme em sua Fé e no que era certo. Reze por mim, para que eu cresça em fortaleza em minha vida. Reze para que eu nunca vacile em fazer o que é certo, não importa o custo. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 6}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar a devoção a Você que ele mostrou, apesar dos sofrimentos que enfrentou quando foi injustamente preso. Beato Anacleto Gonzalez Flores, você viu a necessidade de se opor às políticas anticatólicas de seu governo. Embora soubesse que isso poderia levar a muito sofrimento para você, nunca vacilou em seu compromisso com o que era certo. Por favor, nunca vacile em levar minhas petições perante Deus \textbf{(intenções aqui)}! Você foi capturado pelo governo e acusado de um assassinato que não cometeu. Você foi torturado e, por fim, entregou sua vida pela Fé. Reze por mim, para que eu nunca permita que os sofrimentos me impeçam de fazer o que é certo. Reze para que eu sempre permaneça firme em minha Fé, não importa o custo. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 7}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar o amor por Você a que ele permaneceu fiel, apesar de tantos sofrimentos que enfrentou por causa de sua Fé. Beato Anacleto Gonzalez Flores, você viu como as políticas anticatólicas de seu governo eram erradas. Você decidiu fazer o que pôde para ajudar a pôr fim à perseguição à Igreja de Deus. Por favor, leve minhas petições perante Deus \textbf{(intenções aqui)}, por quem você lutou! Você foi capturado, acusado falsamente de assassinato, injustamente preso e torturado. Você se recusou a trair seus irmãos cristãos e, por fim, entregou sua vida pela Fé. Reze por mim, para que eu permaneça tão firme em minha Fé, apesar de todos os sofrimentos, como você foi. Reze para que eu esteja disposto até mesmo a morrer por minha Fé, se necessário. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 8}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar a virtude que ele demonstrou ao permanecer corajosamente fiel à sua Fé, mesmo ao custo da própria vida. Beato Anacleto Gonzalez Flores, você foi capturado pelo governo anticatólico e preso por um assassinato que não cometeu. Apesar de seus sofrimentos, você continuou firme em sua Fé. Por favor, continue a levar minhas petições perante o  \textbf{(intenções aqui)}trono de Deus! Embora tenha sido brutalmente torturado, você se recusou a trair seus companheiros católicos dando informações ao governo. Você escolheu corajosamente entregar sua vida pela Fé. Reze por mim, para que eu seja tão corajoso na prática de minha Fé quanto você foi. Reze para que eu sempre permaneça firme em minha Fé, não importa o custo. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Dia 9}
+
+Querido Senhor, agradecemos por nos dar o Beato Anacleto Gonzalez Flores como um exemplo de santidade. Ajude-nos a imitar o amor por Você que ele mostrou em sua vida de devoção a Você e à Sua Igreja. Beato Anacleto Gonzalez Flores, você viu a necessidade de defender a Igreja contra os ataques de seu governo. Embora enfrentasse muitos sofrimentos nesse caminho, você perseverou na defesa da Igreja. Por favor, persevere em trazer minhas petições perante Deus \textbf{(intenções aqui)}! Você foi capturado, preso e torturado por causa de sua Fé. Finalmente, escolheu entregar sua vida pela Fé como mártir. Reze por mim, para que eu seja um servo tão devotado a Deus e à Sua Igreja quanto você foi. Reze para que eu nunca vacile em minha devoção a Deus, não importa quais sofrimentos eu possa enfrentar. Por favor, também reze por (mencione suas intenções aqui). 
+
+Rezar a \textbf{\nameref{sub:Oração Final}}
+
+\subsection{Oração Final}\label{sub:Oração Final} % (fold)
+
+\[
+  \textbf{Pai-Nosso, Ave-Maria, Glória ao Pai}
+\]
+
+\versicle. Rogai por nós, Beato Anacleto Soares Flores,
+
+\response. Para que sejamos dignos das promessas de Cristo.
+
+\vfill
+
+\begin{center}
+\subsection*{Fontes:}
+Adaptado de: 
+\underline{\href{https://www.praymorenovenas.com/blessed-anacleto-gonzalez-flores-novena}{Pray More Novenas}}
+\end{center}
+
+
+\end{document}
